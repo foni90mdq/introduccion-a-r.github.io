@@ -94,7 +94,7 @@ Vamos a trabajar primero con el archivo datos1.csv. Recuerden que es más fácil
 
 Lo pueden descargar de aquí:
 
- [datos1.csv](datos\datos1.csv) 
+ [datos1.csv](datos/datos1.csv) 
 
 Podemos abrir el archivo con el block de notas para ver su estructura. Veremos que los filas están separadas por enters y las columnas por comas.
 
