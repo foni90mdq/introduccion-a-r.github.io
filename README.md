@@ -118,7 +118,7 @@ Luego hacemos click en Import.
 
 Deberíamos ver algo así:
 
-![tabla1](D:\Home\Escritorio\claseR\tabla1.PNG)
+![tabla1](tabla1.PNG)
 
 Si hubieramos querido, podríamos haber realizado la importación sólo escribiendo los códigos sin necesidad de utilizar la interfase gráfica.
 
