@@ -96,7 +96,7 @@ Lo pueden descargar de aquí:
 
  [datos1.csv](datos/datos1.csv) 
 
-Podemos abrir el archivo con el block de notas para ver su estructura. Veremos que los filas están separadas por enters y las columnas por comas.
+Podemos abrir el archivo con el block de notas para ver su estructura. Veremos que las filas están separadas por enters y las columnas por comas.
 
 R tiene una función dedicada a importar este tipo de archivos.
 
