@@ -92,6 +92,10 @@ library(ggpubr)
 
 Vamos a trabajar primero con el archivo datos1.csv. Recuerden que es más fácil por el momento que esté en la misma carpeta que el script.
 
+Lo pueden descargar de aquí:
+
+ [datos1.csv](datos\datos1.csv) 
+
 Podemos abrir el archivo con el block de notas para ver su estructura. Veremos que los filas están separadas por enters y las columnas por comas.
 
 R tiene una función dedicada a importar este tipo de archivos.
@@ -118,9 +122,9 @@ Luego hacemos click en Import.
 
 Deberíamos ver algo así:
 
-![tabla1](tabla1.PNG)
+![tabla1](figuras/tabla1.PNG)
 
-Si hubieramos querido, podríamos haber realizado la importación sólo escribiendo los códigos sin necesidad de utilizar la interfase gráfica.
+Si hubiéramos querido, podríamos haber realizado la importación sólo escribiendo los códigos sin necesidad de utilizar la interfase gráfica.
 
 Asegúrense de ir copiando todos los comandos en el script y que no queden sólo en la consola.
 
