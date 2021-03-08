@@ -14,7 +14,7 @@ Para más información este es un buen lugar para comenzar:
 
 https://cran.r-project.org/doc/contrib/R-intro-1.1.0-espanol.1.pdf
 
-En nuestra nos centraremos en los siguientes aspectos:
+En nuestra asignatura nos centraremos en los siguientes aspectos:
 
 - Instalación de R y RStudio
 - Importación y carga de datos
