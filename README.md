@@ -44,7 +44,7 @@ En vez de escribir un montón de código para hacer algo, instalamos una librer�
 Para instalar una librería abrimos el rstudio y en la consola tipeamos:
 
 ```R
-install.packages("nombre de la librería")
+install.packages("nombre de la libreria")
 ```
 
 Vamos a instalar los siguientes:
@@ -112,7 +112,7 @@ Como nos faltaba llamar a la librería "readr" RStudio lo hace por nosotros.
 
 La segunda línea dice que guardemos el contenido del archivo csv en una variable que se llama datos1
 
-La tercera línea le pide a R que nos muestre el contenido de la variable datos1.
+La tercera línea le pide a R que nos muestre el contenido del objeto datos1.
 
 Luego hacemos click en Import.
 
@@ -148,11 +148,11 @@ plot(datos1$`Diferencia de potencial/V` ~ datos1$`Temperatura/K`, data = datos1)
 
 Mirar bien la sintaxis. El nombre de la funcion es plot. El argumento de la función tiene la forma y ~ x, data =datos.
 
-El signo $ sirve para indicar a que columna nos queremos referir.
+El signo $ sirve para indicar a que variable nos queremos referir.
 
 El gráfico que se obtiene es un tanto rústico pero suele ser útil para observar como se comporta nuestro conjunto de valores.
 
- Si queremos volver a llamar al gráfico anterior tenemos que guardarlo en una variable.
+ Si queremos volver a llamar al gráfico anterior tenemos que guardarlo en un objeto.
 
 Por ejemplo:
 
@@ -164,7 +164,7 @@ Si no lo reemplazamos con otra cosa, cada vez que escribamos "grafico1" vamos a 
 
 Si reiniciamos R la memoria se borra y tendremos que ejecutar el script desde el comienzo nuevamente.
 
-Nos puede interesar, si la tabla tiene muchas columnas por ejemplo, guardar las columnas por separado como variables. Esto puede hacer de la siguiente manera:
+Nos puede interesar, si la tabla tiene muchas columnas por ejemplo, guardar las columnas por separado como objetos. Esto puede hacer de la siguiente manera:
 
 ```
 temperatura <- datos1$`Temperatura/K`
@@ -193,7 +193,7 @@ Si queremos volver a armar una tabla (data frame) con las listas anteriores:
 termocupla <- data.frame(temperatura, voltaje)
 ```
 
-Obtenemos así la misma tabla que teníamos al principio. Guarda que se perdieron los titulos de las columnas originales. Pero no pasa nada porque no estamos modificando los datos crudos, nuestro archivo csv está intacto y podemos consultarlo cuando queramos.
+Obtenemos así la misma tabla que teníamos al principio. Guarda que se perdieron los títulos de las columnas originales. Pero no pasa nada porque no estamos modificando los datos crudos, nuestro archivo csv está intacto y podemos consultarlo cuando queramos.
 
 ## Gráficos más bonitos: ggplot2
 
@@ -209,6 +209,8 @@ Para verlo
 ```
 grafico2
 ```
+
+Recordar siempre teclear ctrl + enter para correr el comando.
 
 En el panel de la izquierda podemos exportarlo y guardarlo donde queramos.
 
@@ -253,7 +255,7 @@ A continuación vamos a ver como generar un modelo de regresión lineal sencillo
 
 No vamos a entrar acá en los pormenores matemáticos acerca de los requisitos que se tienen que cumplir para poder hacer una regresión lineal.
 
-Lo único que vamos a decir aquí es lo que pretendemos hacer es explicar la relación entre 2 variables. La relación entre ambas NO siempre es lineal. Aunque parezca una pabada, sólo podemos hacer regresiones lineales cuando la relación entre las variables es "más o menos" lineal en el rango de datos que estamos trabajando.
+Lo único que vamos a decir, es que lo que pretendemos hacer es explicar la relación entre 2 variables. La relación entre ambas NO siempre es lineal. Aunque parezca una pabada, sólo podemos hacer regresiones lineales cuando la relación entre las variables es "más o menos" lineal en el rango de datos que estamos trabajando.
 
 Hay test estadísticos que podemos realizar, pero por ahora nos vamos a quedar con el gráfico que hicimos más arriba, si vemos que los puntos se distribuyen en algo parecido a una recta, tenemos el OK y podemos generar nuestro modelo.
 
@@ -269,7 +271,7 @@ Podemos ver el resultado con summary
 summary(regresion1)
 ```
 
-En la consola aparecerá la info de siempre. La ordenada al origen (Intercept), la pendiente (en este caso temperatura), los valores de R y Rcuadrado y mucha otra información que no analizaremos aquí.
+En la consola aparecerá la info de siempre. La ordenada al origen (Intercept), la pendiente (en este caso temperatura), los valores de R y R cuadrado y mucha otra información que no analizaremos aquí.
 
 Para graficar la recta de regresión, la agregamos al grafico4
 
