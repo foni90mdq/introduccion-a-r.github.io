@@ -112,7 +112,7 @@ datos1 <- read_csv("datos1.csv")
 View(datos1)
 ```
 
-Como nos faltaba llamar a la librería "readr" RStudio lo hace por nosotros.
+Como nos faltaba llamar a la librería "readr", RStudio lo hace por nosotros.
 
 La segunda línea dice que guardemos el contenido del archivo csv en una variable que se llama datos1
 
@@ -150,7 +150,7 @@ Podríamos por ejemplo querer graficar el voltaje vs la temperatura
 plot(datos1$`Diferencia de potencial/V` ~ datos1$`Temperatura/K`, data = datos1)
 ```
 
-Mirar bien la sintaxis. El nombre de la funcion es plot. El argumento de la función tiene la forma y ~ x, data =datos.
+Mirar bien la sintaxis. El nombre de la función es plot. El argumento de la función tiene la forma y ~ x, data =datos.
 
 El signo $ sirve para indicar a que variable nos queremos referir.
 
@@ -168,7 +168,7 @@ Si no lo reemplazamos con otra cosa, cada vez que escribamos "grafico1" vamos a 
 
 Si reiniciamos R la memoria se borra y tendremos que ejecutar el script desde el comienzo nuevamente.
 
-Nos puede interesar, si la tabla tiene muchas columnas por ejemplo, guardar las columnas por separado como objetos. Esto puede hacer de la siguiente manera:
+Nos puede interesar, si la tabla tiene muchas columnas por ejemplo, guardar las columnas por separado como objetos. Esto puede hacerse de la siguiente manera:
 
 ```
 temperatura <- datos1$`Temperatura/K`
@@ -293,3 +293,74 @@ grafico6 <- grafico5 +
 ```
 
 Donde label.x y label.y son las coordenadas donde queremos que aparezca la ecuación en las unidades respectivas de los ejes.
+
+**Exportar todos los gráficos que fueron generando y guardarlos para entregar junto con el script.**
+
+## Parte II: usando el R para resolver un ejercicio de la guía.
+
+Vamos a usar lo aprendido para resolver el ejercicio 1.6 de la guía de seminarios.
+
+En ese ejercicio nos dan datos de densidad vs presión para un gas. En el siguiente archivo podemos encontrar los datos:
+
+ [datos2.txt](datos/datos2.txt)
+
+Vamos a ver como podemos usar el R incluso para hacer las cuentas.
+
+Primero con papel y lápiz debemos encontrar la relación entre el peso molar (PM) y la presión (P):
+$$
+PM_{aparente}= \frac{\delta R T}{P}
+$$
+Con esto podemos calcular los pesos moleculares aparentes para cada presión.
+
+Primero vamos a crear objetos con las variables para poder trabajar con ellas más fácil
+
+```
+atm <- datos2$`Presion(kPa)`*1000/101325
+```
+
+Notar que también incluimos la operación necesaria para pasar de kPa a atm.
+
+Y para los valores de densidad:
+
+```
+densidad <- datos2$`Densidad (kg/m3)`
+```
+
+Notar que kg/m3 es lo mismo que g/l
+
+Ahora calculamos los PM:
+
+```
+aparentes <- densidad*0.082*298/atm
+```
+
+Ahora "aparentes" es un objeto que contiene una lista de todos los pesos moleculares calculados.
+
+Ahora juntamos los datos de presión y PM en un nuevo data frame:
+
+```
+pm.dataframe <- data.frame(aparentes, atm)
+head(pm.dataframe)
+```
+
+Por último podemos graficar los PMaparentes vs la presión:
+
+```
+grafico7<-ggplot(pm.dataframe, aes(x=atm, y=aparentes))+
+  geom_point(colour = "black", size = 3)+
+  theme_classic() +
+  labs(title = "",
+       x = "Presion /atm",
+       y = "PM aparente /g.mol-1") 
+```
+
+Si queremos sacar algún punto de la regresión este es un buen momento para eliminarlo de los datos.
+
+Luego hacemos lm para obtener la ecuación de la recta y así sacar el mejor peso molecular de la ordenada al origen.
+
+```
+regresion2 <- lm(aparentes ~ atm, data = pm.dataframe)
+summary(regresion2)
+```
+
+**Incluir con el archivos para entregar el script con los comandos de esta última parte, el gráfico y el resultado del summary del análisis de regresión.**
