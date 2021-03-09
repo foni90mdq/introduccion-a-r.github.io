@@ -312,7 +312,16 @@ PM_{aparente}= \frac{\delta R T}{P}
 $$
 Con esto podemos calcular los pesos moleculares aparentes para cada presión.
 
-Primero vamos a crear objetos con las variables para poder trabajar con ellas más fácil
+Importamos los datos como vimos en apartado anterior:
+
+```
+datos2 <- read_delim("datos2.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
+head(datos2)
+```
+
+(Cuidado que ahora los datos están separados por tab, indicar esto en las opciones de importación) 
+
+Vamos a crear objetos con las variables para poder trabajar con ellas más fácil
 
 ```
 atm <- datos2$`Presion(kPa)`*1000/101325
