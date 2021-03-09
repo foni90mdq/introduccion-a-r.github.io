@@ -307,9 +307,9 @@ En ese ejercicio nos dan datos de densidad vs presión para un gas. En el siguie
 Vamos a ver como podemos usar el R incluso para hacer las cuentas.
 
 Primero con papel y lápiz debemos encontrar la relación entre el peso molar (PM) y la presión (P):
-$$
-PM_{aparente}= \frac{\delta R T}{P}
-$$
+
+![formula](figuras/formula.png)
+
 Con esto podemos calcular los pesos moleculares aparentes para cada presión.
 
 Importamos los datos como vimos en apartado anterior:
