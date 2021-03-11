@@ -1,10 +1,6 @@
 # Trabajo práctico 1: Uso de R
 [TOC]
 
-
-
-[TOC]
-
 ## Introducción
 
 R es un conjunto integrado de programas para manipulación de datos, cálculo y gráficos. Entre otras características dispone de:
