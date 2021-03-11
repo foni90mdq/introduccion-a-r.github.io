@@ -1,16 +1,14 @@
 # Trabajo práctico 1: Uso de R
 
-
-- [Trabajo práctico 1: Uso de R](#trabajo-pr-ctico-1--uso-de-r)
-  * [Introducción](#introducci-n)
-  * [Instalando R y RStudio](#instalando-r-y-rstudio)
-  * [Instalando algunas librerías](#instalando-algunas-librer-as)
-  * [Nuestro primer script de R](#nuestro-primer-script-de-r)
-  * [Importando un csv](#importando-un-csv)
-  * [Visualización de datos](#visualizaci-n-de-datos)
-  * [Gráficos más bonitos: ggplot2](#gr-ficos-m-s-bonitos--ggplot2)
-  * [Regresión lineal](#regresi-n-lineal)
-  * [Parte II: usando el R para resolver un ejercicio de la guía.](#parte-ii--usando-el-r-para-resolver-un-ejercicio-de-la-gu-a)
+* [Introducción](#introducci-n)
+* [Instalando R y RStudio](#instalando-r-y-rstudio)
+* [Instalando algunas librerías](#instalando-algunas-librer-as)
+* [Nuestro primer script de R](#nuestro-primer-script-de-r)
+* [Importando un csv](#importando-un-csv)
+* [Visualización de datos](#visualizaci-n-de-datos)
+* [Gráficos más bonitos: ggplot2](#gr-ficos-m-s-bonitos--ggplot2)
+* [Regresión lineal](#regresi-n-lineal)
+* [Parte II: usando el R para resolver un ejercicio de la guía.](#parte-ii--usando-el-r-para-resolver-un-ejercicio-de-la-gu-a)
 
 ## Introducción
 
