@@ -1,4 +1,5 @@
 # Trabajo práctico 1: Uso de R
+[TOC]
 
 ## Introducción
 
