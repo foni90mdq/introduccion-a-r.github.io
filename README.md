@@ -122,7 +122,7 @@ Luego hacemos click en Import.
 
 Deberíamos ver algo así:
 
-<center>![tabla1](figuras/tabla1.PNG)</center>
+![tabla1](figuras/tabla1.PNG)
 
 Si hubiéramos querido, podríamos haber realizado la importación sólo escribiendo los códigos sin necesidad de utilizar la interfase gráfica.
 
