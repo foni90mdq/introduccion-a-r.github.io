@@ -69,8 +69,6 @@ install.packages("ggpubr")
 
 La operación anterior puede tardar un rato por lo que les recomendamos hacerla con anticipación.
 
-
-
 ## Nuestro primer script de R
 
 Lo primero que vamos a hacer es crear un archivo (script) donde guardaremos todos los comandos que vayamos utilizando en conjunto con cualquier comentario que queramos agregar.
@@ -99,6 +97,34 @@ library(dplyr)
 library(broom)
 library(ggpubr)
 ```
+
+## Algunas operaciones básicas con R
+
+Podemos usar R como una calculadora convencional, con la ventaja de que podemos guardar los cálculos en objetos y luego hacer operaciones con los mismos.
+
+Probemos ejecutar en la consola los siguientes comandos:
+
+```
+5+3
+5*2
+25/3
+48-57
+```
+
+Ahora probemos lo siguiente:
+
+```
+a <- 5+3
+b <- 4+25
+a+b
+a*b
+```
+
+También podemos crear funciones pero esto vamos a dejarlo para más adelante.
+
+Ahora vamos a crear una tabla sencilla.
+
+Supongamos que queremos cargar la siguiente tabla en excel:
 
 ## Importando un csv
 
