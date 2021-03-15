@@ -2,7 +2,7 @@
 
 
 
-  * [Introducción](#introducción)
+  * [Introducción](#prueba)
 
   * [Instalando R y RStudio](#instalando-r-y-rstudio)
 
@@ -18,11 +18,10 @@
 
   * [Regresión lineal](#regresión-lineal)
 
-  * [Prueba](#prueba)
 
     
 
-## Introducción
+## Introducción [prueba] ##
 
 R es un conjunto integrado de programas para manipulación de datos, cálculo y gráficos. Entre otras características dispone de:
 
