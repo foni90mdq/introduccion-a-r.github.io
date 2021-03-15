@@ -1,4 +1,4 @@
-# Trabajo práctico 1: Uso de R
+# Actividad para entregar 1: Uso de R
 
 
 
