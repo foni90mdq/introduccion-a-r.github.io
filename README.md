@@ -2,26 +2,17 @@
 
 
 
-  * [Introducción](#prueba)
-
+  * [Introducción](#introducción)
   * [Instalando R y RStudio](#instalando-r-y-rstudio)
-
   * [Instalando algunas librerías](#instalando-algunas-librerías)
-
   * [Nuestro primer script de R](#nuestro-primer-script-de-r)
-
   * [Importando un csv](#importando-un-csv)
-
   * [Visualización de datos](#visualización-de-datos)
-
-  * [Gráficos más bonitos: ggplot2](#gráficos-más-bonitos:-ggplot2)
-
+  * [Gráficos más bonitos con ggplot2](#gráficos-más-bonitos-con-ggplot2)
   * [Regresión lineal](#regresión-lineal)
+  * [Un ejemplo de la guía de seminarios](#un-ejemplo-de-la-guía-de-seminarios)
 
-
-    
-
-## Introducción [prueba] ##
+## Introducción ##
 
 R es un conjunto integrado de programas para manipulación de datos, cálculo y gráficos. Entre otras características dispone de:
 
@@ -282,7 +273,7 @@ termocupla <- data.frame(temperatura, voltaje)
 
 Obtenemos así la misma tabla que teníamos al principio. Guarda que se perdieron los títulos de las columnas originales. Pero no pasa nada porque no estamos modificando los datos crudos, nuestro archivo csv está intacto y podemos consultarlo cuando queramos.
 
-## Gráficos más bonitos: ggplot2
+## Gráficos más bonitos con ggplot2
 
 Vamos a realizar el mismo gráfico que antes pero ahora con la librería ggplot2.
 
@@ -379,7 +370,7 @@ Donde label.x y label.y son las coordenadas donde queremos que aparezca la ecuac
 
 **Exportar todos los gráficos que fueron generando y guardarlos para entregar junto con el script.**
 
-## Parte II: usando el R para resolver un ejercicio de la guía.
+## Un ejemplo de la guía de seminarios
 
 Vamos a usar lo aprendido para resolver el ejercicio 1.6 de la guía de seminarios.
 
