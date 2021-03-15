@@ -10,7 +10,7 @@
   * [Visualización de datos](#visualización-de-datos)
   * [Gráficos más bonitos: ggplot2](#gráficos-más-bonitos:-ggplot2)
   * [Regresión lineal](#regresión-lineal)
-  * [Parte II: usando el R para resolver un ejercicio de la guía.](#parte-ii:-usando-el-r-para-resolver-un-ejercicio-de-la-guía)
+  * [Parte II: usando el R para resolver un ejercicio de la guía.](#ej-guia)
 
 ## Introducción
 
@@ -124,7 +124,43 @@ También podemos crear funciones pero esto vamos a dejarlo para más adelante.
 
 Ahora vamos a crear una tabla sencilla.
 
-Supongamos que queremos cargar la siguiente tabla en excel:
+Supongamos que queremos cargar los datos de la tabla 1 que muestran los puntajes de algunos alumnos en función de las hs estudiadas:
+
+
+
+Tabla 1. Horas estudiadas en función de los puntajes obtenidos para algunos estudiantes. 
+
+| Horas  estudiadas | Puntajes |
+| ----------------- | -------- |
+| 2.5               | 21       |
+| 5.1               | 47       |
+| 3.2               | 27       |
+| 8.5               | 75       |
+| 3.5               | 30       |
+| 1.5               | 20       |
+| 9.2               | 88       |
+
+
+
+Lo que vamos a hacer es crear listas con cada una de las variables y luego agrupar las listas en un data frame.
+
+```
+horas <- c(2.5,5.1,3.2,8.5,3.5,1.5,9.2)
+puntajes <- c(21,47,27,75,30,20,88)
+tabla <- data.frame(horas,puntajes)
+```
+
+Ahora probaremos los siguientes comandos:
+
+```
+head(tabla)
+View(tabla)
+plot(horas,puntajes)
+hist(puntajes)
+summary(tabla)
+```
+
+Más adelante vamos a ver una manera más elegante de realizar los gráficos, pero los comandos anteriores son fáciles y nos permiten una rápida visualización de los datos.
 
 ## Importando un csv
 
@@ -242,7 +278,7 @@ Obtenemos así la misma tabla que teníamos al principio. Guarda que se perdiero
 Vamos a realizar el mismo gráfico que antes pero ahora con la librería ggplot2.
 
 ```
-grafico2<-ggplot(termocupla, aes(x=temperatua, y=voltaje))+
+grafico2<-ggplot(termocupla, aes(x=temperatura, y=voltaje))+
   geom_point(colour = "red", size = 5)
 ```
 
@@ -263,7 +299,7 @@ En el comando anterior cambiando la opción en "colour" podemos cambiar el color
 Por ejemplo:
 
 ```
-grafico3<-ggplot(termocupla, aes(x=temperatua, y=voltaje))+
+grafico3<-ggplot(termocupla, aes(x=temperatura, y=voltaje))+
   geom_point(colour = "black", size = 3)
 ```
 
@@ -334,7 +370,7 @@ Donde label.x y label.y son las coordenadas donde queremos que aparezca la ecuac
 
 **Exportar todos los gráficos que fueron generando y guardarlos para entregar junto con el script.**
 
-## Parte II: usando el R para resolver un ejercicio de la guía.
+## Parte II: usando el R para resolver un ejercicio de la guía.{#ej-guia}
 
 Vamos a usar lo aprendido para resolver el ejercicio 1.6 de la guía de seminarios.
 
@@ -410,4 +446,22 @@ regresion2 <- lm(aparentes ~ atm, data = pm.dataframe)
 summary(regresion2)
 ```
 
-**Incluir con el archivos para entregar el script con los comandos de esta última parte, el gráfico y el resultado del summary del análisis de regresión.**
+Para visualizar la recta de regresión en el gráfico anterior :
+
+```
+grafico8 <- grafico7 + geom_smooth(method="lm",se=FALSE, col="red", fullrange=TRUE) + scale_x_continuous(expand = c(0, 0), limits = c(0,1.1)) + scale_y_continuous(expand = c(0, 0), limits = c(42,46))
+```
+
+En el comando anterior se incluyeron algunas modificaciones para extender la recta de regresión hasta el origen.
+
+Para ver el gráfico:
+
+```
+grafico8
+```
+
+Recordar exportarlo en el panel de la derecha.
+
+Recordar que lo presentado aquí es una guía muy básica e introductoria la uso de R con RStudio. Se los alienta a que busquen en en la web el sin fin de tutoriales que hay en torno a estos temas si de verdad les interesa y quieren aprender más.
+
+**Incluir con los archivos para entregar el script con los comandos de esta última parte, el gráfico y el resultado del summary del análisis de regresión.**
