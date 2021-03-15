@@ -3,14 +3,24 @@
 
 
   * [Introducción](#introducción)
+
   * [Instalando R y RStudio](#instalando-r-y-rstudio)
+
   * [Instalando algunas librerías](#instalando-algunas-librerías)
+
   * [Nuestro primer script de R](#nuestro-primer-script-de-r)
+
   * [Importando un csv](#importando-un-csv)
+
   * [Visualización de datos](#visualización-de-datos)
+
   * [Gráficos más bonitos: ggplot2](#gráficos-más-bonitos:-ggplot2)
+
   * [Regresión lineal](#regresión-lineal)
-  * [Parte II: usando el R para resolver un ejercicio de la guía.](#ej-guia)
+
+  * [Prueba](#prueba)
+
+    
 
 ## Introducción
 
@@ -370,7 +380,7 @@ Donde label.x y label.y son las coordenadas donde queremos que aparezca la ecuac
 
 **Exportar todos los gráficos que fueron generando y guardarlos para entregar junto con el script.**
 
-## Parte II: usando el R para resolver un ejercicio de la guía.{#ej-guia}
+## Parte II: usando el R para resolver un ejercicio de la guía.
 
 Vamos a usar lo aprendido para resolver el ejercicio 1.6 de la guía de seminarios.
 
