@@ -372,7 +372,7 @@ Donde label.x y label.y son las coordenadas donde queremos que aparezca la ecuac
 
 ## Un ejemplo de la guía de seminarios
 
-Vamos a usar lo aprendido para resolver el ejercicio 1.6 de la guía de seminarios.
+Vamos a usar lo aprendido para resolver el ejercicio 1.3 de la guía de seminarios.
 
 En ese ejercicio nos dan datos de densidad vs presión para un gas. En el siguiente archivo podemos encontrar los datos:
 
