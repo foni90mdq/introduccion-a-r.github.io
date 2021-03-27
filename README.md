@@ -77,7 +77,7 @@ En RStudio vamos a File -> New File -> Rscript
 
 Luego vamos a guardar este archivo (save as) en la misma carpeta donde tenemos los datos con los que vamos a trabajar. Para el caso del presente tutorial yo tengo mis archivos en una carpeta llamada "claseR" ubicada en el escritorio.
 
-Nombraremos el archivo con su nombre para realizar la entrega del mismo más tarde. En este caso el archivo lo nombré como tp1-foni.R
+Nombraremos el archivo con su nombre para realizar la entrega del mismo más tarde. En este caso el archivo lo nombré como foni-tp1-a1.R
 
 Lo primero que debemos hacer es decirle a R el directorio donde vamos a trabajar.
 
@@ -368,7 +368,7 @@ grafico6 <- grafico5 +
 
 Donde label.x y label.y son las coordenadas donde queremos que aparezca la ecuación en las unidades respectivas de los ejes.
 
-**Exportar todos los gráficos que fueron generando y guardarlos para entregar junto con el script.**
+**Exportar todos los gráficos que fueron generando y guardarlos en una carpeta junto con el script. **
 
 ## Un ejemplo de la guía de seminarios
 
