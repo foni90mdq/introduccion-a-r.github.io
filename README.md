@@ -11,6 +11,7 @@
   * [Gráficos más bonitos con ggplot2](#gráficos-más-bonitos-con-ggplot2)
   * [Regresión lineal](#regresión-lineal)
   * [Un ejemplo de la guía de seminarios](#un-ejemplo-de-la-guía-de-seminarios)
+  * [Actividad 1](#actividad-1)
 
 ## Introducción ##
 
