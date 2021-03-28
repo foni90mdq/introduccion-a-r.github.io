@@ -368,7 +368,9 @@ grafico6 <- grafico5 +
 
 Donde label.x y label.y son las coordenadas donde queremos que aparezca la ecuación en las unidades respectivas de los ejes.
 
-**Exportar todos los gráficos que fueron generando y guardarlos en una carpeta junto con el script. **
+**Exportar todos los gráficos que fueron generando y guardarlos **
+
+**en una carpeta junto con el script. **
 
 ## Un ejemplo de la guía de seminarios
 
