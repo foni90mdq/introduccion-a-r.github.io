@@ -1,4 +1,4 @@
-# Actividad para entregar 1: Uso de R
+# Trabajo práctico N  1: Uso de R
 
 
 
@@ -121,6 +121,13 @@ a*b
 ```
 
 También podemos crear funciones pero esto vamos a dejarlo para más adelante.
+
+Siempre que queramos guardar algo dentro del script para nosotros o para otra persona que lo vaya a leer, pero que no sea código de R lo que hacemos es insertar un comentario. En R todo lo que se escriba después del símbolo # no será tenido en cuenta como código y podemos escribir aclaraciones o lo que nosotros queramos.
+
+```
+# Esto que escribo acá es un comentario, no se compila con el resto del código.
+a <- 5 # Puedo poner comentarios donde desee, lo que está a la izquierda del # si cuenta como código.
+```
 
 Ahora vamos a crear una tabla sencilla.
 
@@ -368,10 +375,6 @@ grafico6 <- grafico5 +
 
 Donde label.x y label.y son las coordenadas donde queremos que aparezca la ecuación en las unidades respectivas de los ejes.
 
-**Exportar todos los gráficos que fueron generando y guardarlos **
-
-**en una carpeta junto con el script. **
-
 ## Un ejemplo de la guía de seminarios
 
 Vamos a usar lo aprendido para resolver el ejercicio 1.3 de la guía de seminarios.
@@ -464,6 +467,12 @@ grafico8
 
 Recordar exportarlo en el panel de la derecha.
 
-Recordar que lo presentado aquí es una guía muy básica e introductoria la uso de R con RStudio. Se los alienta a que busquen en en la web el sin fin de tutoriales que hay en torno a estos temas si de verdad les interesa y quieren aprender más.
+Lo presentado aquí es una guía muy básica e introductoria la uso de R con RStudio. Se los alienta a que busquen en en la web el sin fin de tutoriales que hay en torno a estos temas si de verdad les interesa y quieren aprender más.
 
-**Incluir con los archivos para entregar el script con los comandos de esta última parte, el gráfico y el resultado del summary del análisis de regresión.**
+## Actividad 1
+
+Se deberá entregar el script de R conteniendo todos los comandos (tanto los de los primeros ejemplos como los del ejercicio de la guía) junto con los datos que se usaron para realizar las actividades. Para entregarlo comprimir los archivos antes mencionados y guardarlos con el nombre:
+
+ **tp1-apellido.zip**
+
+Este archivo zip será el que suban en la tarea correspondiente del aula virtual. Asegurarse que el script funcione correctamente antes de comprimir. Sólo incluir en el archivo zip el script y los datos, no incluir ni fotos ni otro tipo de archivos, nosotros deberíamos ser capaces de recuperar las imágenes y los análisis que hicieron corriendo el script en nuestras computadoras.
