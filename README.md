@@ -1,4 +1,6 @@
-# Trabajo práctico N  1: Uso de R
+# Trabajo práctico N°  1: 
+
+# Uso de R
 
 
 
