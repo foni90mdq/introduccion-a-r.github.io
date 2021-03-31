@@ -2,7 +2,7 @@
 
 # Uso de R
 
-cambios
+
 
 
 
@@ -478,6 +478,6 @@ Lo presentado aquí es una guía muy básica e introductoria la uso de R con RSt
 
 Se deberá entregar el script de R conteniendo todos los comandos (tanto los de los primeros ejemplos como los del ejercicio de la guía) junto con los datos que se usaron para realizar las actividades. Para entregarlo comprimir los archivos antes mencionados y guardarlos con el nombre:
 
- **tp1-apellido.zip**
+ **tp1-apellido-nombre.zip**
 
 Este archivo zip será el que suban en la tarea correspondiente del aula virtual. Asegurarse que el script funcione correctamente antes de comprimir. Sólo incluir en el archivo zip el script y los datos, no incluir ni fotos ni otro tipo de archivos, nosotros deberíamos ser capaces de recuperar las imágenes y los análisis que hicieron corriendo el script en nuestras computadoras.
