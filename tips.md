@@ -78,6 +78,8 @@ El ajuste anteriror **NO** es un modelo aceptable.
 
 Como nosotros queremos queremos extrapolar a presión cero para poder calcular la mejor masa molar, podríamos tomar solo los primeros valores, que parecen ajustarse bien a una recta para hacer la regresión.
 
+## Subset (filtrando data frames)
+
 En R existe una función llamado **subset** que me permite filtrar los datos de acuerdo a algun criterio.
 
 Probemos lo siguiente:
