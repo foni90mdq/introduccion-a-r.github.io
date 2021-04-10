@@ -68,7 +68,7 @@ plot_1 <- ggplot(datos, aes(x=pre, y=pm_ch4))+
 
 El gráfico se ve así:
 
-![Rplot01](/home/foni/Documents/FQ/consejos útiles/Rplot01.png)
+![Rplot01](figuras/consejos/Rplot01.png)
 
 Por supuesto NO vamos a hacer una regresión lineal en este caso porque claramente los datos no se asemejan a una recta.
 
