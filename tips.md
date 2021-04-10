@@ -200,3 +200,7 @@ Veremos algo así:
 Fijarse que en la numeración de las filas pasa de la 1 a la 3 porque excluimos la dos. Lo que está adentro de los corchetes significa que omita de la fila 2, todas las columnas.
 
 Eso es todo por ahora, a medida que vayamos seleccionando cosas útiles, las iremos agregando aquí.
+
+Para volver a la página principal:
+[Introducción a R](https://foni90mdq.github.io/trabajo-practico-r.github.io/)
+
