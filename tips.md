@@ -72,7 +72,7 @@ El gráfico se ve así:
 
 Por supuesto NO vamos a hacer una regresión lineal en este caso porque claramente los datos no se asemejan a una recta.
 
-![Rplot2](/home/foni/Documents/FQ/consejos útiles/Rplot2.png)
+![Rplot2](figuras/consejos/Rplot2.png)
 
 El ajuste anteriror **NO** es un modelo aceptable.
 
@@ -163,7 +163,7 @@ Si queremos podemos reemplazar esas variables por los numeros que nosotros quera
 
 Obtendrán el sigueinte gráfico:
 
-![Rplot3](/home/foni/Documents/FQ/consejos útiles/Rplot3.png)
+![Rplot3](figuras/consejos/Rplot3.png)
 
 Volvamos por un momento a nuestra tabla recortada:
 
