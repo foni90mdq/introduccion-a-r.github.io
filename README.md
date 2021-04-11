@@ -14,6 +14,7 @@
   * [Regresión lineal](#regresión-lineal)
   * [Un ejemplo de la guía de seminarios](#un-ejemplo-de-la-guía-de-seminarios)
   * [Actividad 1](#actividad-1)
+  * [Tips y consejos](tips.md)
 
 ## Introducción ##
 
