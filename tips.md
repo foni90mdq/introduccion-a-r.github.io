@@ -8,7 +8,7 @@ Consulte esta sección regularmente porque se irá extendiendo a medida que agre
 
 [Regresión lineal y algo de edición de data frames](#regresión-lineal-y-algo-de-edición-de-data-frames)
 
-[Filtrar data frames con subset](#subset-(filtrando-data-frames))
+[Filtrar data frames con subset](#subset)
 
 [Graficar más de un set de datos](#agregando-más-de-un-set-de-datos-en-el-mismo-gráfico)
 
@@ -86,7 +86,7 @@ El ajuste anterior **NO** es un modelo aceptable.
 
 Como nosotros queremos extrapolar a presión cero para poder calcular la mejor masa molar, podríamos tomar solo los primeros valores, que parecen ajustarse bien a una recta para hacer la regresión.
 
-## Subset (filtrando data frames)
+## Subset
 
 En R existe una función llamada **subset** que me permite filtrar los datos de acuerdo a algun criterio.
 
@@ -274,6 +274,8 @@ Si todo salió bien deberíamos ver algo como esto
 [Aquí](scripts/1-6.R) pueden acceder al script completo con todos los comandos anteriores.
 
 Eso es todo por ahora, a medida que vayamos seleccionando cosas útiles, las iremos agregando aquí.
+
+[Volver al inicio](#algunos-tips-y-consejos-informales-para-r)
 
 Para volver a la página principal:
 [Introducción a R](https://foni90mdq.github.io/trabajo-practico-r.github.io/)
