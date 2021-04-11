@@ -4,7 +4,7 @@ En este apartado se relevarán tips, links y consejos que pueden ser de utilidad
 
 Consulte esta sección regularmente porque se irá extendiendo a medida que agreguemos cosas.
 
-[Volver al artículo principal](README.md)
+[Volver a la Intro](README.md)
 
 ## Regresión lineal y algo de edición de data frames
 
