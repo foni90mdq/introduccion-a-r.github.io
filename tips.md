@@ -88,7 +88,7 @@ Como nosotros queremos extrapolar a presión cero para poder calcular la mejor m
 
 ## Subset
 
-En R existe una función llamada **subset** que me permite filtrar los datos de acuerdo a algun criterio.
+En R existe una función llamada **subset** que permite filtrar los datos de acuerdo a algun criterio.
 
 Probemos lo siguiente:
 
