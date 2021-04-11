@@ -6,11 +6,11 @@ Consulte esta sección regularmente porque se irá extendiendo a medida que agre
 
 [Introducción a R](README.md)
 
-[Regresión lineal y algo de edición de data frames](# Regresión lineal y algo de edición de data frames)
+[Regresión lineal y algo de edición de data frames](#regresión-lineal-y-algo-de-edición-de-data-frames)
 
-[Filtrar data frames con subset](# Subset (filtrando data frames))
+[Filtrar data frames con subset](#subset-(filtrando-data-frames))
 
-[Graficar más de un set de datos](# Agregando más de un set de datos en el mismo gráfico))
+[Graficar más de un set de datos](#agregando-más-de-un-set-de-datos-en-el-mismo-gráfico))
 
 
 
