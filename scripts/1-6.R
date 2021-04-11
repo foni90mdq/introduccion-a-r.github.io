@@ -58,3 +58,24 @@ head(recortado)
 
 mas_recortado <- recortado[-c(2),]
 mas_recortado
+
+den_h2 <- c(0.0122, 0.0609, 0.122, 0.606, 1.21, 5.76, 7.36, 8.91, 10.9, 15.4)
+pm_h2 <- 0.082*200*den_h2/pre
+tabla_2 <- data.frame(pre, pm_ch4, pm_h2)
+head(tabla_2)
+
+
+colores <- c("Metano" = "darkred", "Hidrogeno" = "steelblue")
+            
+plot_4 <- ggplot(tabla_2, aes(x=pre)) +
+  geom_point(aes(y=pm_ch4, colour = "Metano"), size = 2) +
+  geom_point(aes(y=pm_h2, colour = "Hidrogeno"), size = 2) +
+  theme_classic() +
+  labs(title = "",
+       x = "Presion (atm)",
+       y = "PM aparente (g/mol)",
+       colour="")+
+  scale_color_manual(values = colores)
+  
+
+plot_4
