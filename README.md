@@ -1,6 +1,4 @@
-# Trabajo práctico N°  1: 
-
-# Uso de R
+# Introducción a R
 
 
 
@@ -481,3 +479,5 @@ Se deberá entregar el script de R conteniendo todos los comandos (tanto los de 
  **tp1-apellido-nombre.zip**
 
 Este archivo zip será el que suban en la tarea correspondiente del aula virtual. Asegurarse que el script funcione correctamente antes de comprimir. Sólo incluir en el archivo zip el script y los datos, no incluir ni fotos ni otro tipo de archivos, nosotros deberíamos ser capaces de recuperar las imágenes y los análisis que hicieron corriendo el script en nuestras computadoras.
+
+[Aquí]{tips.md}encontrarás tips y consejos varios sobre R.
