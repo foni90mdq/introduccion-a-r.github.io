@@ -1,6 +1,6 @@
 # Algunos tips y consejos informales para R
 
-En este apartado relevarán tips, links y consejos que pueden ser de utilidad relacionado con el entorno de trabajo R.
+En este apartado se relevarán tips, links y consejos que pueden ser de utilidad relacionado con el entorno de trabajo R.
 
 Consulte esta sección regularmente porque se irá extendiendo a medida que agreguemos cosas.
 
