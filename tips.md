@@ -10,11 +10,11 @@ Consulte esta sección regularmente porque se irá extendiendo a medida que agre
 
 Ya estuvimos viendo lo básico sobre como importar un set de datos y hacer un análisis de regresión de los datos.
 
-Ahora, tomando como ejemplo el **ejercico 1.6** vamos a ver algunas cosas más que podemos hacer que les pueden resultar útiles en el futuro.
+Ahora, tomando como ejemplo el **ejercicio 1.6** vamos a ver algunas cosas más que podemos hacer y que les pueden resultar útiles en el futuro.
 
-Vamos a trabajar sólo con las datos del metano ya que son los más complicados.
+Vamos a trabajar sólo con los datos del metano ya que son los más complicados.
 
-Primero vamos a cargar los datos de presión y densidad correspondientes al metano, y depaso llamamos a la librería ggplot2 porque la vamos a usar más adelante.
+Primero vamos a cargar los datos de presión y densidad correspondientes al metano, y de paso llamamos a la librería ggplot2 porque la vamos a usar más adelante.
 
 ```
 library(ggplot2)
@@ -23,7 +23,7 @@ pre <- c(0.1, 0.5, 1, 5, 10, 50, 65, 80, 100, 150)
 den_ch4 <- c(0.0976, 0.488, 0.977, 4.9, 9.85, 50.6, 66.1, 81.4, 101, 147)
 ```
 
-Luego calculamos los pesos moleculares apartes (esto ya lo demostramos anteriormente)
+Luego calculamos los pesos moleculares aparentes (esto ya lo demostramos anteriormente)
 
 ```
 pm_ch4 <- 0.082*200*den_ch4/pre
@@ -53,7 +53,7 @@ En la consola deberíamos ver algo así :
 10 150.0 147.0000 16.07200
 ```
 
-Ahora graficamos los datos para ver qué tenemos:
+Graficamos los datos para ver qué tenemos:
 
 ```
 plot_1 <- ggplot(datos, aes(x=pre, y=pm_ch4))+
@@ -70,17 +70,17 @@ El gráfico se ve así:
 
 ![Rplot01](figuras/consejos/Rplot01.png)
 
-Por supuesto NO vamos a hacer una regresión lineal en este caso porque claramente los datos no se asemejan a una recta.
+Por supuesto NO vamos a hacer una regresión lineal en este caso porque claramente los datos no se ajustan a una recta.
 
 ![Rplot2](figuras/consejos/Rplot2.png)
 
-El ajuste anteriror **NO** es un modelo aceptable.
+El ajuste anterior **NO** es un modelo aceptable.
 
-Como nosotros queremos queremos extrapolar a presión cero para poder calcular la mejor masa molar, podríamos tomar solo los primeros valores, que parecen ajustarse bien a una recta para hacer la regresión.
+Como nosotros queremos extrapolar a presión cero para poder calcular la mejor masa molar, podríamos tomar solo los primeros valores, que parecen ajustarse bien a una recta para hacer la regresión.
 
 ## Subset (filtrando data frames)
 
-En R existe una función llamado **subset** que me permite filtrar los datos de acuerdo a algun criterio.
+En R existe una función llamada **subset** que me permite filtrar los datos de acuerdo a algun criterio.
 
 Probemos lo siguiente:
 
@@ -110,7 +110,7 @@ fit <- lm(pm_ch4~pre, data=datos, subset=(pre<50))
 resumen <- summary(fit)
 ```
 
-Lo que hicimos en los comando anteriores fue generar el modelo lineal utilizando sólo los valores en los que la presión es menor a 50 atm. Luego creamos un objeto resumen que contiene el summary de la regresión. Este objeto contiene mucha de la información del análisis de regresión
+Lo que hicimos en los comandos anteriores fue generar el modelo lineal utilizando sólo los valores en los que la presión es menor a 50 atm. Luego creamos un objeto resumen que contiene el summary de la regresión. Este objeto contiene mucha de la información del análisis de regresión.
 
 Si queremos ver sólo la ordenada al origen y la pendiente, podemos generar una matriz de coeficientes:
 
@@ -127,7 +127,7 @@ Verán algo así:
 pre          0.01487221 0.0006050786   24.57897 1.476378e-04
 ```
 
-Si queremos podemos guardar en nuevos objetos los valores de la pendiente y la ordena al origen accediendo a la matriz anterior.
+Si queremos podemos guardar en nuevas variables los valores de la pendiente y la ordenada al origen accediendo a la matriz anterior.
 
 ```
 ordenada <- resumen$coefficients[1,1]
@@ -136,7 +136,7 @@ pendiente <- resumen$coefficients[2,1]
 
 Notar que dentro de los corchetes está el elemento de matriz al cual queremos acceder [fila, columna]. Es importante mencionar que a diferencia de otros lenguajes, el primer elemento de una lista es [1] y no [0].
 
-Podemos ver que extrajimos
+Podemos ver qué extrajimos
 
 ```
 pendiente
@@ -152,7 +152,7 @@ Y obtendremos
 [1] 16.00294
 ```
 
-En la clase anterior vimos como agregar la recta de regresión al gráfico con geom_smooth, ahora veremos otro manera que nos permitirá agregar la recta que nosotros queramos al gráfico.
+En la clase anterior vimos cómo agregar la recta de regresión al gráfico con geom_smooth, ahora veremos otra manera que nos permitirá agregar la recta que nosotros queramos a un gráfico.
 
 ```
 plot_2 <- plot_1 + geom_abline( slope= pendiente, intercept= ordenada, color= 'red')
@@ -161,9 +161,9 @@ plot_2
 
 Notar que en el comando anterior **pendiente** y **ordenada** son los objetos que extrajimos de la matriz de los coeficientes.
 
-Si queremos podemos reemplazar esas variables por los numeros que nosotros queramos.
+Nota: Podemos reemplazar esas variables por los numeros que nosotros queramos para graficar cualquier otra recta.
 
-Obtendrán el sigueinte gráfico:
+Obtendrán el siguiente gráfico:
 
 ![Rplot3](figuras/consejos/Rplot3.png)
 
@@ -181,7 +181,7 @@ Volvamos por un momento a nuestra tabla recortada:
 
 En este caso, no es necesario hacerlo, pero podríamos querer excluir alguna fila de nuestro análisis de regresión.
 
-En R, no podemos eliminar datos del data frame, pero podemos generar otro donde filtramos la fila que nosotros queramos. Supongamos que queremos sacar la segunda fila:
+En R, no podemos eliminar datos del data frame, pero podemos generar otro donde filtramos la fila a elección. Supongamos que queremos sacar la segunda fila:
 
 ```
 mas_recortado <- recortado[-c(2),]
@@ -199,7 +199,7 @@ Veremos algo así:
 5 10.0  9.8500 16.1540
 ```
 
-Fijarse que en la numeración de las filas pasa de la 1 a la 3 porque excluimos la dos. Lo que está adentro de los corchetes significa que omita de la fila 2, todas las columnas.
+Fijarse que la numeración de las filas pasa de la 1 a la 3 porque excluimos la 2. Lo que está adentro de los corchetes significa que omita de la fila 2, todas las columnas.
 
 Eso es todo por ahora, a medida que vayamos seleccionando cosas útiles, las iremos agregando aquí.
 
