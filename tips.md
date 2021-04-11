@@ -14,7 +14,7 @@ Ahora, tomando como ejemplo el **ejercicio 1.6** vamos a ver algunas cosas más 
 
 Vamos a trabajar sólo con los datos del metano ya que son los más complicados.
 
-Primero vamos a cargar los datos de presión y densidad correspondientes al metano, y de paso llamamos a la librería ggplot2 porque la vamos a usar más adelante.
+Primero vamos a cargar los datos de presión (en atm) y densidad (en g/L) correspondientes al metano, y de paso llamamos a la librería ggplot2 porque la vamos a usar más adelante.
 
 ```
 library(ggplot2)
