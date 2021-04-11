@@ -10,7 +10,7 @@ Consulte esta sección regularmente porque se irá extendiendo a medida que agre
 
 [Filtrar data frames con subset](#subset-(filtrando-data-frames))
 
-[Graficar más de un set de datos](#agregando-más-de-un-set-de-datos-en-el-mismo-gráfico))
+[Graficar más de un set de datos](#agregando-más-de-un-set-de-datos-en-el-mismo-gráfico)
 
 
 
