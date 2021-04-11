@@ -5,8 +5,11 @@ En este apartado se relevarán tips, links y consejos que pueden ser de utilidad
 Consulte esta sección regularmente porque se irá extendiendo a medida que agreguemos cosas.
 
 [Introducción a R](README.md)
+
 [Regresión lineal y algo de edición de data frames](# Regresión lineal y algo de edición de data frames)
+
 [Filtrar data frames con subset](# Subset (filtrando data frames))
+
 [Graficar más de un set de datos](# Agregando más de un set de datos en el mismo gráfico))
 
 
