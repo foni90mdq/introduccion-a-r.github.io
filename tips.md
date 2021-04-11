@@ -14,7 +14,7 @@ Ahora, tomando como ejemplo el **ejercicio 1.6** vamos a ver algunas cosas más 
 
 Vamos a trabajar sólo con los datos del metano ya que son los más complicados.
 
-Primero vamos a cargar los datos de presión (en atm) y densidad (en g/L) correspondientes al metano, y de paso llamamos a la librería ggplot2 porque la vamos a usar más adelante.
+Primero vamos a cargar los datos de presión (en atm) y densidad (en g/L) correspondientes al metano, y de paso llamamos a la librería *ggplot2* porque la vamos a usar más adelante.
 
 ```
 library(ggplot2)
@@ -103,14 +103,14 @@ Deberíamos ver algo así:
 
 Notar que ahora sólo nos quedamos con las filas en las que la presión es menor a 50 atm.
 
-Esta función puede ser usada dentro del comando lm directamente:
+Esta función puede ser usada dentro del comando *lm* directamente:
 
 ```
 fit <- lm(pm_ch4~pre, data=datos, subset=(pre<50))
 resumen <- summary(fit)
 ```
 
-Lo que hicimos en los comandos anteriores fue generar el modelo lineal utilizando sólo los valores en los que la presión es menor a 50 atm. Luego creamos un objeto resumen que contiene el summary de la regresión. Este objeto contiene mucha de la información del análisis de regresión.
+Lo que hicimos en los comandos anteriores fue generar el modelo lineal utilizando sólo los valores en los que la presión es menor a 50 atm. Luego creamos un objeto resumen que contiene el *summary* de la regresión. Este objeto contiene mucha de la información del análisis de regresión.
 
 Si queremos ver sólo la ordenada al origen y la pendiente, podemos generar una matriz de coeficientes:
 
