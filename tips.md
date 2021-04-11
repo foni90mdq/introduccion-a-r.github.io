@@ -201,6 +201,8 @@ Veremos algo así:
 
 Fijarse que la numeración de las filas pasa de la 1 a la 3 porque excluimos la 2. Lo que está adentro de los corchetes significa que omita de la fila 2, todas las columnas.
 
+[Aquí](scripts/1-6.R) pueden acceder al script completo con todos los comandos anteriores.
+
 Eso es todo por ahora, a medida que vayamos seleccionando cosas útiles, las iremos agregando aquí.
 
 Para volver a la página principal:
