@@ -23,7 +23,7 @@ pre <- c(0.1, 0.5, 1, 5, 10, 50, 65, 80, 100, 150)
 den_ch4 <- c(0.0976, 0.488, 0.977, 4.9, 9.85, 50.6, 66.1, 81.4, 101, 147)
 ```
 
-Luego calculamos los pesos moleculares aparentes (esto ya lo demostramos anteriormente)
+Luego calculamos los pesos moleculares aparentes (esto ya vimos como hacerlo [aquí](https://github.com/foni90mdq/trabajo-practico-r.github.io/blob/main/README.md#un-ejemplo-de-la-gu%C3%ADa-de-seminarios))
 
 ```
 pm_ch4 <- 0.082*200*den_ch4/pre
