@@ -201,6 +201,68 @@ Veremos algo así:
 
 Fijarse que la numeración de las filas pasa de la 1 a la 3 porque excluimos la 2. Lo que está adentro de los corchetes significa que omita de la fila 2, todas las columnas.
 
+## Agregando más de un set de datos en el mismo gráfico
+
+Supongamos que en el caso del problema 1.6 discutido anteriormente, queremos visualizar en el mismo gráfico los pesos moleculares del metano y del hidrógeno.
+
+Cargaremos primero los datos correspondientes al hidrógeno, calcularemos los pesos moleculares y armaremos un data frame con los valores de presion, los pesos moleculares del metano y los hidrógeno.
+
+```
+den_h2 <- c(0.0122, 0.0609, 0.122, 0.606, 1.21, 5.76, 7.36, 8.91, 10.9, 15.4)
+pm_h2 <- 0.082*200*den_h2/pre
+tabla_2 <- data.frame(pre, pm_ch4, pm_h2)
+head(tabla_2)
+```
+
+Obtendremos el siguiente data frame
+
+```
+> head(tabla_2)
+   pre  pm_ch4   pm_h2
+1  0.1 16.0064 2.00080
+2  0.5 16.0064 1.99752
+3  1.0 16.0228 2.00080
+4  5.0 16.0720 1.98768
+5 10.0 16.1540 1.98440
+6 50.0 16.5968 1.88928
+```
+
+Recordar que el comando *head* sólo muestra las primeras filas de un data frame.
+
+En nuestro caso tenemos los datos ordenados de manera ancha (wide), esto significa que tenemos un para cada valor de presion dos valores de peso molecular, una para el metano y otro para el hidrógeno. 
+
+Esta no es la mejor manera de organizar este tipo de datos. Mas adelante vamos a ver cual es la manera más conveniente. 
+
+Sin embargo, podemos visualizar los datos sin ningún inconveniente.
+
+Lo primero que haremos es crear un código de colores para armar la leyenda, indicando que color queremos para cada variable.
+
+```
+colors <- c("Metano" = "darkred", "Hidrogeno" = "steelblue")
+```
+
+El comando para realizar el gráfico es el siguiente
+
+```
+plot_4 <- ggplot(tabla_2, aes(x=pre)) +
+  geom_point(aes(y=pm_ch4, colour = "Metano"), size = 2) +
+  geom_point(aes(y=pm_h2, colour = "Hidrogeno"), size = 2) +
+  theme_classic() +
+  labs(title = "",
+       x = "Presion (atm)",
+       y = "PM aparente (g/mol)",
+       colour="")+
+  scale_color_manual(values = colores)
+```
+
+Aquí hay que destacar un par de cosas. Notar que en la primera linea, pusimos dentro del primer aes sólo la variable x. Luego agregamos un geom_point por cada variable y que queremos graficar. La opción colour está dentro del aes, porque así le indicamos a ggplot que coloree según nuestro código de colores.
+
+Si queremos agregarle nombre a la leyenda, podemos hacerlo dentro de labs. Por último agregamos el scale_color_manual para indicar que use nuestro código de colores.
+
+Si todo salió bien deberíamos ver algo como esto
+
+![Rplot4](figuras/consejos/Rplot4.png)
+
 [Aquí](scripts/1-6.R) pueden acceder al script completo con todos los comandos anteriores.
 
 Eso es todo por ahora, a medida que vayamos seleccionando cosas útiles, las iremos agregando aquí.
