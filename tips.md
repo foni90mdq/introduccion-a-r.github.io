@@ -2,7 +2,7 @@
 
 En este apartado se relevarán tips, links y consejos que pueden ser de utilidad relacionado con el entorno de trabajo R.
 
-Consulte esta sección regularmente porque se irá extendiendo a medida que agreguemos cosas.
+Esta sección está viva!, se irá extendiendo a medida que agreguemos cosas.
 
 [Introducción a R](README.md)
 
