@@ -1,4 +1,4 @@
-# [Ecuaciones diferenciales en R]()
+# Ecuaciones diferenciales en R
 
 En la siguiente sección vamos a ver como puede usarse el R para resolver de forma numérica, sistema de ecuaciones diferenciales.
 
@@ -165,6 +165,7 @@ plot <- ggplot(resultado, aes(x=time)) +
        colour="")+
   scale_color_manual(values = colores)
 ```
+En [este](https://github.com/foni90mdq/trabajo-practico-r.github.io/blob/main/tips.md) pueden ver con más detalle lo que hicimos en el comando anterior
 
 Podemos ver como quedó nuestro gráfico
 
@@ -173,3 +174,6 @@ plot
 ```
 
 ![perfiles](figuras/ecdif/perfiles.png)
+
+[Volver al inicio](#ecuaciones-diferenciales-en-r)
+[Ir a la página principal](https://github.com/foni90mdq/trabajo-practico-r.github.io/blob/main/README.md)
