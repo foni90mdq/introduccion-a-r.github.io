@@ -175,5 +175,8 @@ plot
 
 ![perfiles](figuras/ecdif/perfiles.png)
 
+
+
 [Volver al inicio](#ecuaciones-diferenciales-en-r)\
 [Ir a la página principal](README.md)
+
