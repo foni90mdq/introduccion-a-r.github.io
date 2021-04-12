@@ -175,5 +175,5 @@ plot
 
 ![perfiles](figuras/ecdif/perfiles.png)
 
-[Volver al inicio](#ecuaciones-diferenciales-en-r)
+[Volver al inicio](#ecuaciones-diferenciales-en-r)\
 [Ir a la página principal](https://github.com/foni90mdq/trabajo-practico-r.github.io/blob/main/README.md)
