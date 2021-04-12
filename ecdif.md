@@ -18,9 +18,9 @@ En windows, necesitaremos instalar primero Rtools, lo pueden encontrar aquí:
 
 https://cran.r-project.org/bin/windows/Rtools/
 
-En linux puede ser que no tengan que instalar nada extra, si al instalar el paquete da algún código de error, leerlo para ver que librerías faltan. En mi caso tuve que instalar en el sistema **gfotran**, l**ibopenblas-base** y **libopenblas-dev**.
+En linux puede ser que no tengan que instalar nada extra, si al instalar el paquete da algún código de error, leerlo para ver que librerías faltan. En mi caso tuve que instalar en el sistema **gfortran**, **libopenblas-base** y **libopenblas-dev**.
 
-Si todo saliói bien podemos cargarlo con exito. También cargaremos ggplot2 para hacer algunos gráficos.
+Si todo salió bien podemos cargarlo con exito. También cargaremos ggplot2 para hacer algunos gráficos.
 
 ```
 library(deSolve)
