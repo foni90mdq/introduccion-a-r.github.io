@@ -57,9 +57,9 @@ Por poner un ejemplo, tomarán los siguientes valores:
 
 [A] = 1 M
 [B] = 1 M
-k<sub>1 = 1 M<sup>-1 s<sup>-1
-k<sub>-1 = 0.3 s<sup>-1
-k<sub>2 = 0.3 s<sup>-1
+k1 = 1 M-1 s-1
+k-1 = 0.3 s-1
+k2 = 0.3 s-1
 
 Primero especificaremos los valores de los parámetros
 
