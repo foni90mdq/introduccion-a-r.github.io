@@ -59,7 +59,7 @@ A = 1 M\
 B = 1 M\
 k1 = 1 M-1 s-1\
 k-1 = 0.3 s-1\
-k2 = 0.3 s-1\
+k2 = 0.3 s-1
 
 Primero especificaremos los valores de los parámetros
 
