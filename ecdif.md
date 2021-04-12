@@ -1,7 +1,5 @@
 # Ecuaciones diferenciales en R
 
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
-
 En la siguiente sección vamos a ver como puede usarse el R para resolver de forma numérica, un sistema de ecuaciones diferenciales.
 
 Como caso de estudio vamos a analizar el siguiente mecanismo propuesto para una reacción de A con B que da C, doonde AB es el intermediario. 
