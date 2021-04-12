@@ -165,7 +165,7 @@ plot <- ggplot(resultado, aes(x=time)) +
        colour="")+
   scale_color_manual(values = colores)
 ```
-En [este](tips.md#agregando-más-de-un-set-de-datos-en-el-mismo-gráfico) pueden ver con más detalle lo que hicimos en el comando anterior
+En [este link](tips.md#agregando-más-de-un-set-de-datos-en-el-mismo-gráfico) pueden ver con más detalle lo que hicimos en el comando anterior
 
 Podemos ver como quedó nuestro gráfico
 
