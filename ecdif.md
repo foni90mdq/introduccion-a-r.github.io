@@ -64,13 +64,13 @@ k2 = 0.3 s-1
 Primero especificaremos los valores de los parámetros
 
 ```
-parameters <- c(k1 = 1, k2 = 0.3, k3 = 0.3)
+parametros <- c(k1 = 1, k2 = 0.3, k3 = 0.3)
 ```
 
 Luego las variables junto con sus condiciones iniciales
 
 ```
-state <- c(A = 1, B = 1, AB = 0, C = 0)
+estado <- c(A = 1, B = 1, AB = 0, C = 0)
 ```
 
 Luego escribiremos nuestro modelo basado en las ecuaciones diferenciales anteriores. Para  ellos tenemos que hacer algo que no hicimos previamente hasta ahora que es definir una nueva función.
