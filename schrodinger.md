@@ -83,7 +83,7 @@ ggplot(s.frame, aes(x=x))+
 
 Obtendremos lo siguiente
 
-[oscilador armonico](figuras/ecdif/oscilador%20armonico)
+![oscilador armonico](figuras/ecdif/oscilador%20armonico)
 
 Si quiesieramos hacer lo mismo para la partícula en la caja, lo unico que tenemos que hacer es cambiar la forma del potencial por
 
@@ -94,7 +94,7 @@ y <- 0*x
 
 Al correr nuevamente el codigo ahora obtendremos
 
-[caja](figuras/ecdif/caja)
+![caja](figuras/ecdif/caja)
 
 [Aquí](scripts/schrodinger.R) podrán descar el script de R con los comandos anteriores.
 
