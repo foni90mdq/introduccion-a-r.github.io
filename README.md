@@ -16,6 +16,7 @@
   * [Actividad 1](#actividad-1)
   * [Tips y consejos](tips.md)
   * [Ecuaciones diferenciales en R](ecdif.md)
+  * [Resolucion numerica de la ecuacion de Schrodinger independiente del tiempo en 1D](schrodinger.md)
 
 ## Introducción ##
 
