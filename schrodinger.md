@@ -1,4 +1,4 @@
-# Resolución numérica de la ecuación de schrodinger independiente del tiempo en 1D \{#prueba}
+# Resolución numérica de la ecuación de schrodinger independiente del tiempo en 1D
 
 ## Librerías
 La ecuación de schrodinger es una ecuacion a autovalores donde no aparece la derivada primera de la función. 
@@ -96,6 +96,5 @@ Al correr nuevamente el código ahora obtendremos
 [Aquí](scripts/schrodinger.R) podrán descargar el script de R con los comandos anteriores.
 
 [Ir al comienzo](#resolución-numérica-de-la-ecuación-de-schrodinger-independiente-del-tiempo-en-1D)
-[Prueba](#prueba)
 
 [Volver a la página principal](README.md)
