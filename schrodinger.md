@@ -4,16 +4,11 @@
 La ecuación de schrodinger es una ecuacion a autovalores donde no aparece la derivada primera de la funcion. 
 
 Existen métodos numéricos para resolver este tipo de ecuaciones.
-Instalaremos una librería de R que implementa el método de Numerov y el método de Chevyshev.
+Instalaremos una librería de R que llamada [Schrodinger](https://github.com/rcarcasses/schrodinger) implementa el método de Numerov y el método de Chevyshev.
 
-https://github.com/rcarcasses/schrodinger
+La libreria necesita necesita de otra librería de algebra lineal de C++ llamada [armadillo](http://arma.sourceforge.net/download.html)
 
-La libreria necesita necesita de otra librería de algebra lineal de C++ llamada armadillo
-
-http://arma.sourceforge.net/download.html
-
-En este otro link hay otras instrucciones para instalar esta última:
-https://www.uio.no/studier/emner/matnat/fys/FYS4411/v13/guides/installing-armadillo/
+En este otro [link](https://www.uio.no/studier/emner/matnat/fys/FYS4411/v13/guides/installing-armadillo/) hay otras instrucciones para instalar esta última:
 
 Una vez instalada armadillo podremos instalar la libreria schrodinger con
 
