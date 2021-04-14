@@ -17,10 +17,9 @@ https://www.uio.no/studier/emner/matnat/fys/FYS4411/v13/guides/installing-armadi
 
 Una vez instalada armadillo podremos instalar la libreria schrodinger con
 
-´´´
-install.packages('devtools')
-devtools::install_github('rcarcasses/schrodinger')
-´´´
+´´´install.packages('devtools')
+devtools::install_github('rcarcasses/schrodinger')´´´
+
 Aca hay que tener un poco de paciencia, con suerte se instalará con exito, sino tendremos que ver con paciencia que librerias nos faltan según los mensajes de error que aparezcan.
 Es importante que la libreria armadillo este en el path por defecto donde R busca las librerias.
 
