@@ -98,6 +98,6 @@ Al correr nuevamente el codigo ahora obtendremos
 
 [Aquí](scripts/schrodinger.R) podrán descar el script de R con los comandos anteriores.
 
-[Ir al comienzo](#resolución-numerica-de-la-ecuacion-de schrodinger-independiente-del-tiempo-en-1D)
+[Ir al comienzo](#resolución-numerica-de-la-ecuacion-de-schrodinger-independiente-del-tiempo-en-1D)
 
 [Volver a la página principal](README.md)
