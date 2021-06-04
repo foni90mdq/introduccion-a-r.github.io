@@ -1,6 +1,6 @@
 # Introducción a R
 
-
+Para consultas o sugerencias: pepealfonso22@gmail.com
 
 
 
