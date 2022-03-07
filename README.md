@@ -1,4 +1,5 @@
-# Introducción a R
+# Trabajo practico 1.
+# Introduccion a R
 
 Para consultas o sugerencias: pepealfonso22@gmail.com
 
@@ -23,8 +24,8 @@ Para consultas o sugerencias: pepealfonso22@gmail.com
 R es un conjunto integrado de programas para manipulación de datos, cálculo y gráficos. Entre otras características dispone de:
 
 - almacenamiento y manipulación efectiva de datos,
-- operadores para cálculo sobre variables indexadas (Arrays), en particular matrices, 
-- una amplia, coherente e integrada colección de herramientas para análisis de datos, 
+- operadores para cálculo sobre variables indexadas (Arrays), en particular matrices,
+- una amplia, coherente e integrada colección de herramientas para análisis de datos,
 - posibilidades gráficas para análisis de datos, que funcionan directamente sobre pantalla o impresora, y
 - un lenguaje de programación bien desarrollado, simple y efectivo, que incluye condicionales, ciclos, funciones recursivas y posibilidad de entradas y salidas. (Debe destacarse que muchas de las funciones suministradas con el sistema están escritas en el lenguaje R)
 
@@ -41,7 +42,7 @@ En nuestra asignatura nos centraremos en los siguientes aspectos:
 
 ## Instalando R y RStudio
 
-Lo primero que debemos hacer es instalar la distribución **base** para nuestro sistema operativo. 
+Lo primero que debemos hacer es instalar la distribución **base** para nuestro sistema operativo.
 
 http://mirror.fcaglp.unlp.edu.ar/CRAN/
 
@@ -141,7 +142,7 @@ Supongamos que queremos cargar los datos de la tabla 1 que muestran los puntajes
 
 
 
-Tabla 1. Horas estudiadas en función de los puntajes obtenidos para algunos estudiantes. 
+Tabla 1. Horas estudiadas en función de los puntajes obtenidos para algunos estudiantes.
 
 | Horas  estudiadas | Puntajes |
 | ----------------- | -------- |
@@ -181,7 +182,7 @@ Vamos a trabajar primero con el archivo datos1.csv. Recuerden que es más fácil
 
 Lo pueden descargar de aquí:
 
- [datos1.csv](datos/datos1.csv) 
+ [datos1.csv](datos/datos1.csv)
 
 Podemos abrir el archivo con el block de notas para ver su estructura. Veremos que las filas están separadas por enters y las columnas por comas.
 
@@ -329,7 +330,7 @@ grafico4 <- grafico2 +
   theme_classic() +
   labs(title = "",
        x = "Temperatura /K",
-       y = "Voltaje /v") 
+       y = "Voltaje /v")
 ```
 
 Y para verlo:
@@ -404,7 +405,7 @@ datos2 <- read_delim("datos2.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
 head(datos2)
 ```
 
-(Cuidado que ahora los datos están separados por tab, indicar esto en las opciones de importación) 
+(Cuidado que ahora los datos están separados por tab, indicar esto en las opciones de importación)
 
 Vamos a crear objetos con las variables para poder trabajar con ellas más fácil
 
@@ -445,7 +446,7 @@ grafico7<-ggplot(pm.dataframe, aes(x=atm, y=aparentes))+
   theme_classic() +
   labs(title = "",
        x = "Presion /atm",
-       y = "PM aparente /g.mol-1") 
+       y = "PM aparente /g.mol-1")
 ```
 
 Si queremos sacar algún punto de la regresión este es un buen momento para eliminarlo de los datos.
